@@ -10,12 +10,14 @@ pageEncoding="UTF-8" %>
     <h1>Feedbacks</h1>
     <table>
         <thead>
+            <th>ID</th>
             <th>Name</th>
             <th>Feedback</th>
         </thead>
         <tbody>
             <c:forEach var="feedback" items="${feedbacks}">
             <tr>
+                <td>${feedback.id}</td>
                 <td>${feedback.name}</td>
                 <td>${feedback.feedback}</td>
             </tr>

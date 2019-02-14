@@ -4,16 +4,19 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
 public class FeedbackService {
     List<Feedback> feedbacks = new ArrayList<Feedback>();
+    // thread safe int to set id in feedback
+    private AtomicInteger nextId = new AtomicInteger();
 
     // hardcode some values, definitively not the way to go !!!!
     public FeedbackService() {
-        feedbacks.add(new Feedback(1, "Rudy","Dat kan hier veel beter!"));
-        feedbacks.add(new Feedback(2, "Elke","Dit is het beste wat je kan krijgen!"));
-        feedbacks.add(new Feedback(3, "Rudi","Dat gaat hier niet vooruit!"));
+        feedbacks.add(new Feedback(nextId.incrementAndGet(), "Rudy","Dat kan hier veel beter!"));
+        feedbacks.add(new Feedback(nextId.incrementAndGet(), "Elke","Dit is het beste wat je kan krijgen!"));
+        feedbacks.add(new Feedback(nextId.incrementAndGet(), "Rudi","Dat gaat hier niet vooruit!"));
     }
 
     // just return the whole list, JSP page takes care of presentation
@@ -45,6 +48,7 @@ public class FeedbackService {
     }
 
     public void addFeedback(Feedback feedback) {
+        feedback.setId(nextId.incrementAndGet());
         feedbacks.add(feedback);
     }
 

@@ -18,10 +18,6 @@
 
     <form method="post" action="/feedback/add">
         <p>
-            <label>ID</label>
-            <input type="text" name="id" />
-        </p>
-        <p>
             <label>Name</label>
             <input type="text" name="name" />
         </p>

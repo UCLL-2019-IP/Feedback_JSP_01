@@ -1,8 +1,24 @@
 package be.ucll.feedback.model;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Feedback {
     private int id;
-    private String name, feedback;
+
+    // check values inputted in form
+    @NotNull
+    @NotEmpty
+    @Size(min=2, max=20)
+    private String name;
+
+    // check values inputted in form
+    @NotNull
+    @NotEmpty
+    @Size(min=5, max=50)
+    private String feedback;
 
     public Feedback() {}
 
