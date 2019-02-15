@@ -31,7 +31,6 @@ public class FeedbackController implements WebMvcConfigurer {
 
     @GetMapping("/feedback/add")
     public String addFeedbackForm(Model model) {
-        model.addAttribute("feedback", new Feedback());
         return "addFeedback";
     }
 
