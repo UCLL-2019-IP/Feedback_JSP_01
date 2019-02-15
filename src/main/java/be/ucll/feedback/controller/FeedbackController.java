@@ -30,7 +30,7 @@ public class FeedbackController implements WebMvcConfigurer {
     }
 
     @GetMapping("/feedback/add")
-    public String addFeedbackForm(Model model) {
+    public String addFeedbackForm() {
         return "addFeedback";
     }
 
