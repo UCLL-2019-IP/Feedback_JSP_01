@@ -66,7 +66,7 @@ targetCompatibility = 1.8
 
 ext{
     jstlVersion = '1.2' // now you can use this througout the script
-    tomcatEmbedJaspeVersion = '9.0.10'
+    tomcatEmbedJasperVersion = '9.0.10'
     ecjVersion = '4.4.2'
 }
 
@@ -97,7 +97,7 @@ dependencies {
     compile group: 'javax.servlet', name: 'jstl', version: jstlVersion // use the user-defined property
     // needed because we use jsp
     // compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.10'
-    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: tomcatEmbedJaspeVersion
+    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: tomcatEmbedJasperVersion
     // needed because we use jsp
     // compile group: 'org.eclipse.jdt.core.compiler', name: 'ecj', version: '4.4.2'
     compile group: 'org.eclipse.jdt.core.compiler', name: 'ecj', version: ecjVersion
