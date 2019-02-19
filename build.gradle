@@ -65,7 +65,7 @@ targetCompatibility = 1.8
 // ################################################################
 
 ext{
-    jstlVersion = '1.2' // now you can use this througout the script
+    jstlVersion = '1.2' // now you can use this throughout the script
     tomcatEmbedJasperVersion = '9.0.10'
     ecjVersion = '4.4.2'
 }
