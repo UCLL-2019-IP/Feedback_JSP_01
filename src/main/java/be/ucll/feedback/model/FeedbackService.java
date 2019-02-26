@@ -22,6 +22,7 @@ public class FeedbackService {
     }
 
     public void addFeedback(Feedback feedback) {
+        feedback.setId(nextId.incrementAndGet());
         feedbacks.add(feedback);
     }
 
