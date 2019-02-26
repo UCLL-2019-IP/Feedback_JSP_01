@@ -5,6 +5,9 @@ pageEncoding="UTF-8" %>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Feedback By ID - JSP version</title>
+
+    <link href="/./css/styles.css" rel="stylesheet">
+
 </head>
 <body>
     <h1>Feedback</h1>

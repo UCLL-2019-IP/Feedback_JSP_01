@@ -5,6 +5,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Add feedback</title>
+
+    <link href="/./css/styles.css" rel="stylesheet">
+
 </head>
 <body>
     <h1>Add feedback</h1>

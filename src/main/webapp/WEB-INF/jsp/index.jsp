@@ -6,11 +6,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Feedback</title>
+
+    <link href="/./css/styles.css" rel="stylesheet">
+    <script src="/./js/custom.js"></script>
+
 </head>
 <body>
     <ul>
         <li><a href="/feedback/">View feedbacks</a></li>
         <li><a href="/feedback/add">Add feedback</a></li>
     </ul>
+
+    <img src="/./images/dog.jpg">
 </body>
 </html>
